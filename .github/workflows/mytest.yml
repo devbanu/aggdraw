@@ -13,4 +13,5 @@ jobs:
       - run: ls -l ${{ github.workspace }}
       - run: brew list
       - run: brew info freetype
+      - run: file /opt/homebrew/Cellar/freetype/2.13.2/lib/libfreetype.dylib
       - run: echo "STATUS ${{ job.status }}."
